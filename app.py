@@ -13,6 +13,7 @@ def hello_world():
 
 @app.route('/gitversion')
 def git_version():
+    #replace with relevant git repo url
     repo_url = "https://github.com/anbuselvidemo/KUBEDEMO"
     getversioncommand = "git ls-remote "+ repo_url
     process = subprocess.Popen([getversioncommand], shell=True, stdin=None, stdout=subprocess.PIPE, executable="/bin/bash")
