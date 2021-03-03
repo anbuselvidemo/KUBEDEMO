@@ -25,5 +25,5 @@ You would need to have docker installed, configure a webhook from git to Jenkins
 Create a multi branch pipeline in Jenkins and configure your github url. 
 A push to Github will now trigger a build and push the new version of the app to docker hub from where it can be deployed using the Kubernetes manifest.
 
-#NOTE
+# NOTE
 The demo app reads the github hash and shares it. In an actual application, the Githash details and Build Version can be pushed to a changelog/artifactory and that can be used to show the details on the healthcheck url
