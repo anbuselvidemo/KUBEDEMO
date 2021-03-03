@@ -4,6 +4,8 @@ This is a simple Flask app which will return the latest git commit hash for the 
 
 # How to run 
 
+You need to have Kubernetes setup installed to run this project.
+
 Apply the provided Manifests to deploy the Application and start the service using the below commands
 
 _kubectl apply -f https://raw.githubusercontent.com/anbuselvidemo/KUBEDEMO/main/deployment.yaml_
