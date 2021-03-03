@@ -9,6 +9,7 @@ node {
 
     stage('Build image') {
   
+        
        app = docker.build("anbuselvi/demo")
     }
 
