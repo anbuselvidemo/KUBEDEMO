@@ -22,7 +22,7 @@ node {
     }
 
     stage('Push image') {
-        // replace docker with the jenkins credential for docker hub
+        // replace docker with the jenkins credential for docker hub 
         docker.withRegistry('https://registry.hub.docker.com', 'docker') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
